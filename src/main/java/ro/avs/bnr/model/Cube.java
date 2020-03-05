@@ -1,4 +1,4 @@
-package ro.avs.model;
+package ro.avs.bnr.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
