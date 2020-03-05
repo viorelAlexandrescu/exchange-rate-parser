@@ -1,10 +1,10 @@
-package ro.avs.bnr;
+package ro.avs;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import java.io.IOException;
 
-public class ExchangeRateParser<T> {
+public abstract class ExchangeRateParser<T> {
 
     private final Class<T> type;
 
@@ -16,4 +16,6 @@ public class ExchangeRateParser<T> {
         XmlMapper xmlMapper = new XmlMapper();
         return xmlMapper.readValue(values, type);
     }
+
+    public abstract T getExchangeRateData();
 }
